@@ -5,8 +5,8 @@ from sklearn.metrics import accuracy_score
 def train_model(data):
     """Обучает ML-модель на основе данных."""
     # Выберите признаки и целевую переменную
-    X = data[['investment', 'skills', 'mobility']]  # Признаки
-    y = data['success']  # Целевая переменная (добавьте её в данные заранее)
+    X = data[['investment']]  # Признаки
+    y = data['success']  # Целевая переменная
 
     # Разделение данных
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
