@@ -1,0 +1,22 @@
+# Игнорировать настройки IDE
+.idea/
+
+# Кеш pyc и __pycache__
+__pycache__/
+*.py[cod]
+
+# Виртуальные окружения
+venv/
+env/
+*.egg-info/
+
+# Логи и временные файлы
+*.log
+*.tmp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Системные файлы
+.DS_Store
+Thumbs.db
