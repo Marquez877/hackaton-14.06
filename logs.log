@@ -1,0 +1,274 @@
+2025-06-15 06:47:12,892 - ERROR - Prediction failed
+Traceback (most recent call last):
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/main.py", line 17, in predict
+    result = predict_success(data)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/models/predictor.py", line 21, in predict_success
+    prediction = model.predict([data.dict().values()])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 903, in predict
+    proba = self.predict_proba(X)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 945, in predict_proba
+    X = self._validate_X_predict(X)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 637, in _validate_X_predict
+    X = validate_data(
+        ^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2954, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1053, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/_array_api.py", line 757, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: float() argument must be a string or a real number, not 'dict_values'
+2025-06-15 06:48:10,674 - ERROR - Prediction failed
+Traceback (most recent call last):
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/main.py", line 17, in predict
+    result = predict_success(data)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/models/predictor.py", line 21, in predict_success
+    prediction = model.predict([data.dict().values()])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 903, in predict
+    proba = self.predict_proba(X)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 945, in predict_proba
+    X = self._validate_X_predict(X)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 637, in _validate_X_predict
+    X = validate_data(
+        ^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2954, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1053, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/_array_api.py", line 757, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: float() argument must be a string or a real number, not 'dict_values'
+2025-06-15 06:52:06,745 - ERROR - Prediction failed
+Traceback (most recent call last):
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/main.py", line 17, in predict
+    result = predict_success(data)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/models/predictor.py", line 21, in predict_success
+    prediction = model.predict([data.dict().values()])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 903, in predict
+    proba = self.predict_proba(X)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 945, in predict_proba
+    X = self._validate_X_predict(X)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 637, in _validate_X_predict
+    X = validate_data(
+        ^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2954, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1053, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/_array_api.py", line 757, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: float() argument must be a string or a real number, not 'dict_values'
+2025-06-15 06:52:28,226 - ERROR - Prediction failed
+Traceback (most recent call last):
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/main.py", line 17, in predict
+    result = predict_success(data)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/models/predictor.py", line 21, in predict_success
+    prediction = model.predict([data.dict().values()])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 903, in predict
+    proba = self.predict_proba(X)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 945, in predict_proba
+    X = self._validate_X_predict(X)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 637, in _validate_X_predict
+    X = validate_data(
+        ^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2954, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1053, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/_array_api.py", line 757, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: float() argument must be a string or a real number, not 'dict_values'
+2025-06-15 06:55:01,265 - ERROR - Prediction failed
+Traceback (most recent call last):
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/main.py", line 17, in predict
+    result = predict_success(data)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/models/predictor.py", line 22, in predict_success
+    prediction = model.predict([input_list])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 903, in predict
+    proba = self.predict_proba(X)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 945, in predict_proba
+    X = self._validate_X_predict(X)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 637, in _validate_X_predict
+    X = validate_data(
+        ^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2954, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1053, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/_array_api.py", line 757, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'пчеловодство, маркетинг'
+2025-06-15 06:55:14,626 - ERROR - Prediction failed
+Traceback (most recent call last):
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/main.py", line 17, in predict
+    result = predict_success(data)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/models/predictor.py", line 22, in predict_success
+    prediction = model.predict([input_list])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 903, in predict
+    proba = self.predict_proba(X)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 945, in predict_proba
+    X = self._validate_X_predict(X)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 637, in _validate_X_predict
+    X = validate_data(
+        ^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2954, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 1053, in check_array
+    array = _asarray_with_order(array, order=order, dtype=dtype, xp=xp)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/_array_api.py", line 757, in _asarray_with_order
+    array = numpy.asarray(array, order=order, dtype=dtype)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'пчеловодство, маркетинг'
+2025-06-15 06:58:27,945 - ERROR - Prediction failed
+Traceback (most recent call last):
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/main.py", line 17, in predict
+    result = predict_success(data)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/models/predictor.py", line 21, in predict_success
+    prediction = model.predict(X)
+                 ^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 903, in predict
+    proba = self.predict_proba(X)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 945, in predict_proba
+    X = self._validate_X_predict(X)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 637, in _validate_X_predict
+    X = validate_data(
+        ^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2975, in validate_data
+    _check_n_features(_estimator, X, reset=reset)
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2839, in _check_n_features
+    raise ValueError(
+ValueError: X has 459 features, but RandomForestClassifier is expecting 8 features as input.
+2025-06-15 06:58:38,736 - ERROR - Prediction failed
+Traceback (most recent call last):
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/main.py", line 17, in predict
+    result = predict_success(data)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/models/predictor.py", line 21, in predict_success
+    prediction = model.predict(X)
+                 ^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 903, in predict
+    proba = self.predict_proba(X)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 945, in predict_proba
+    X = self._validate_X_predict(X)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 637, in _validate_X_predict
+    X = validate_data(
+        ^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2975, in validate_data
+    _check_n_features(_estimator, X, reset=reset)
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2839, in _check_n_features
+    raise ValueError(
+ValueError: X has 459 features, but RandomForestClassifier is expecting 8 features as input.
+2025-06-15 07:01:00,917 - ERROR - Prediction failed
+Traceback (most recent call last):
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/main.py", line 17, in predict
+    result = predict_success(data)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/models/predictor.py", line 20, in predict_success
+    X = preprocess_input(data)  # <-- сюда преобразованный вектор
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/services/preprocess.py", line 17, in preprocess_input
+    data["investment"],
+    ~~~~^^^^^^^^^^^^^^
+TypeError: 'BusinessInput' object is not subscriptable
+2025-06-15 07:04:56,611 - ERROR - Prediction failed
+Traceback (most recent call last):
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/main.py", line 17, in predict
+    result = predict_success(data)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/models/predictor.py", line 20, in predict_success
+    X = preprocess_input(data)  # <-- сюда преобразованный вектор
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/services/preprocess.py", line 17, in preprocess_input
+    data["investment"],
+    ~~~~^^^^^^^^^^^^^^
+TypeError: 'BusinessInput' object is not subscriptable
+2025-06-15 07:06:55,114 - ERROR - Prediction failed
+Traceback (most recent call last):
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/main.py", line 17, in predict
+    result = predict_success(data)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/models/predictor.py", line 21, in predict_success
+    prediction = model.predict(X)
+                 ^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 903, in predict
+    proba = self.predict_proba(X)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 945, in predict_proba
+    X = self._validate_X_predict(X)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 637, in _validate_X_predict
+    X = validate_data(
+        ^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2975, in validate_data
+    _check_n_features(_estimator, X, reset=reset)
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2839, in _check_n_features
+    raise ValueError(
+ValueError: X has 460 features, but RandomForestClassifier is expecting 8 features as input.
+2025-06-15 07:08:07,040 - ERROR - Prediction failed
+Traceback (most recent call last):
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/main.py", line 17, in predict
+    result = predict_success(data)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/app/models/predictor.py", line 21, in predict_success
+    prediction = model.predict(X)
+                 ^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 903, in predict
+    proba = self.predict_proba(X)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 945, in predict_proba
+    X = self._validate_X_predict(X)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/ensemble/_forest.py", line 637, in _validate_X_predict
+    X = validate_data(
+        ^^^^^^^^^^^^^^
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2975, in validate_data
+    _check_n_features(_estimator, X, reset=reset)
+  File "/Users/ermek/PycharmProjects/hackaton-14.06/.venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 2839, in _check_n_features
+    raise ValueError(
+ValueError: X has 460 features, but RandomForestClassifier is expecting 8 features as input.
