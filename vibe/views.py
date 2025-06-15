@@ -9,13 +9,14 @@ load_dotenv()
 
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
-SUCCESSFUL_BUSINESSES = """
-1. Кофейня возле университета с бюджетом 5000 сом, успех высокий.
-2. Instagram-магазин с корейской косметикой, ведёт молодая девушка, успех высокий.
-3. Услуги по ремонту телефонов рядом с кампусом, бюджет 3000 сом, успех средний.
-4. Онлайн-курсы по программированию через Telegram и Zoom, успех высокий.
-5. Мобильная прачечная по району с доставкой через WhatsApp, успех средний.
-"""
+# Функция для чтения файла с бизнес-данными
+def load_successful_businesses(filepath='successful_businesses.txt'):
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = f.read()
+        return data
+    except Exception as e:
+        return ""
 
 class AnalyzeView(APIView):
     def post(self, request):
@@ -23,11 +24,15 @@ class AnalyzeView(APIView):
         if not user_message:
             return Response({"error": "Поле 'message' обязательно"}, status=400)
 
+        businesses_info = load_successful_businesses()
+        if not businesses_info:
+            return Response({"error": "Не удалось загрузить информацию о бизнесах"}, status=500)
+
         prompt = f"""
 Ты — опытный бизнес-аналитик из Бишкека.
 Ниже список локальных успешных бизнесов:
 
-{SUCCESSFUL_BUSINESSES}
+{businesses_info}
 
 Пользователь описал свои возможности:
 "{user_message}"
@@ -37,6 +42,9 @@ class AnalyzeView(APIView):
 - Идея
 - Почему она подходит
 - Оценка вероятности успеха (низкая / средняя / высокая)
+-Актуальность в Кыргызстане
+-Потенциальные риски
+-Возможные траты в сомах
 """
 
         try:
